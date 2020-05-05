@@ -1,0 +1,22 @@
+"const" variables are fixed, and cannot have their values changed after being initialized
+
+type conversion (typkonvertierung) - type conversion can cause problems because it is often accompanied by data loss
+	example: int a = 1.3f; float b = a; //in this situation we attempt to store a float value 1.3 in the integer a, but this gets truncated to 1, and when
+we set the value of the float b to a, we get 1 and not 1.3
+
+int main() {
+	int (type)		a (variable)		= 9 (value);
+	bool (type)		b (variable)		= false (value);
+	char (type)		c (variable)		= 'a' (value);
+	double (type)		d (variable)		= 1.3 (value);
+	int (type) const	five (variable)		= 5 (value);
+	double (type)		e (variable)		= a (variable) / five (variable);
+
+	five (variable) = d (variable);
+
+	return 0;
+}
+
+the line "five = d" is problematic, as the variable "five" is a const value and therefore cannot be reassigned
+the line "double e = a / five" is problematic because both a and five are integers, and dividing an integer by an integer will return an integer value,
+	assigning the integer 1 to e rather than the double 1.8

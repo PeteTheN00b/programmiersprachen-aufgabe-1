@@ -2,12 +2,12 @@ Aufgabe 1-5
 
 Initialization - An initialization is to assign a value to a variable at the time of its construction.
 
-Assignment (Zuweisung) - An assignment is to change the value of a variable at any time.
+Assignment (Zuweisung) - An assignment is to change the value of a variable at any time other than its construction.
 
 	The difference is that an initialization can only happen at the time of a variable's construction,
-whereas an assignment can occur at any time.
+whereas an assignment can occur at any time except that.
 
-int i = 5; //Initialization and assignment
+int i = 5; //Assignment style Initialization, but not assignment
 i = 3; //Assignment, but not initialization
 
 
