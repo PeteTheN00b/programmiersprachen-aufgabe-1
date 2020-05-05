@@ -1,0 +1,40 @@
+Aufgabe 1-5
+
+Initialization - An initialization is to assign a value to a variable at the time of its construction.
+
+Assignment (Zuweisung) - An assignment is to change the value of a variable at any time.
+
+	The difference is that an initialization can only happen at the time of a variable's construction,
+whereas an assignment can occur at any time.
+
+int i = 5; //Initialization and assignment
+i = 3; //Assignment, but not initialization
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Aufgabe 1-6
+
+Declaration - A declaration is to tell the compiler that something exists or will exist.
+
+Definition - A definition is to tell the compiler about the implementation of something which has been declared.
+	Memory adress for a variable, body for a function and class.
+
+	The difference is that a variable, class or function can be declared without providing its functionality,
+thereby telling the compiler that this object exists, but not what this object will do.
+	For an object to be defined it must also have been or be declared at the same time.
+
+
+extern int i; //Declared variable, but not defined
+
+int i; //Defined variable
+
+
+void p(); //Declared function, but not defined
+
+void p() {std::cout << "Hello World!" << std::endl}; //Defined function
+
+
+class C; //Declared class
+
+class C { }; //Defined class
