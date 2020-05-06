@@ -1,0 +1,24 @@
+signature - The signature of a function contains its return type ("void" meaning no return type), and the parameters it takes (can be empty)
+
+#include <iostream>
+
+int var = 3; //defined outside of any function's scope, lasts until the end of the program
+
+double sum(double a, double b) //a and b were defined within the scope of this function, and will expire when this function closes
+{
+	return a + b;
+} //a and b expire
+
+int square(int var) //this local variable "var" was defined within the scope of this function and will expire when this function closes
+{
+	return var * var;
+} //local "var" expires, the initial "var" is unaffected as it was defined outside of this function's scope despite sharing the same name
+
+int main()
+{
+	for (int i = 0; i != 100; ++i) { //the variable i exists until the for loop closes
+		std::cout << "i^2 = " << square(i) << '\n';
+		std::cout << "i+i = " << sum(i, i) << '\n';
+	} //i expires
+	return 0;
+}
