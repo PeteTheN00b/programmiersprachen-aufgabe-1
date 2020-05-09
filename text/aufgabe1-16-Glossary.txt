@@ -1,0 +1,61 @@
+C++ - A programming language meant to write source code with which is designed to prioritize efficiency and functionality.
+
+Source Code - Commands written by the user, to be converted into commands sent to a machine.
+
+Compiler - Converts code (usually source code) from one programming language into another. Often from source code into an executable or linkable counterpart.
+
+Linker - Combines multiple object files, to form an executable program.
+
+Object Code - The code which is produced by a compiler, usually meant to be purely functional and provide instructions to a machine in a machine code language such as binary.
+
+Executable File - A file which causes the machine to perform actions according to the encoded instructions.
+
+main() - The main function of a program, which is run when the executable file is executed.
+
+#include - To link another piece of code, to the current file. Often used to gain access to premade functions and classes.
+
+comment - A piece of text which does not affect the actual program itself. Often used by developers to make notes.
+
+header - A file which is not meant to be executed, but meant to contain tools such as functions and classes for other files to access.
+
+program - A collection of instructions meant to be used by a machine.
+
+output - The visible effect of a program's results. Example: Can be basic things such as printing "Hello World" to a console, or displaying a moving 3D model.
+
+std::cout - Prints given data to the console.
+
+std::cin - Receives inputted data, to provide it to variables.
+
+ostream operator (<<) - Insertion Operator. Takes the right hand value to place it into the currently ongoing output stream.
+http://www.cplusplus.com/reference/ostream/ostream/operator%3C%3C/
+
+istream operator (>>) - Extraction Operator. Takes the left hand value to place it into the currently ongoing input stream.
+http://www.cplusplus.com/reference/istream/istream/operator%3E%3E/
+
+function - A series of instructions with parameters and a return type that can be called at any time. Often used for long repeated functionality with little or no variance.
+
+function signature - Seperates a function from other ones due to its unique combination of parameters and return type. Used to identify what data to input, and what type
+will be outputted.
+
+declaration - When the compiler is first informed that this data will exist or exists.
+
+definition - When the details about this data's existence are provided to the compiler.
+
+type - Contains information on how much memory should be allocated to a variable, and details on how the data should be interacted with.
+
+type conversion - Information on how to convert data from one type into another.
+
+variable - Stores a type and a value at a memory address. Unless const, can usually have its stored value changed at runtime.
+
+name - The name which a variable or function is associated with. No two variables can share the same name in the same scope. While variables can share the same name
+in different scopes, it is usually not recommended due to legibility.
+
+value - The machine code which represents the desired information.
+
+initialization - Providing a value to a variable at the time of the variable's creation.
+
+assignment - Providing a value to a variable at any other time.
+
+const - To define a variable as unchanging. Useful to create frequently used constants. Example: float g = -9.81, approximate gravitational acceleration on the earth.
+
+scope - The part of a program during which a variable exists. Upon exiting this scope the variable can no longer be accessed.
