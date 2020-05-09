@@ -23,7 +23,7 @@ float Cylinder::getVolume()
 	return this->height_ * this->radius_ * this->radius_ * M_PI;
 }
 
-TEST_CASE("fract", "[checkfract]")
+TEST_CASE("checkCylinderVolume", "[CylinderVolume]")
 {
 	Cylinder c1{ 10.f, 3.f }; //Manually tested
 	Cylinder c2{ 3.f, 6.f }; //Manually tested
