@@ -1,7 +1,5 @@
 #define CATCH_CONFIG_RUNNER
-#define _USE_MATH_DEFINES //seemed to be necessary to use the math PI constant
 #include "catch2/catch.hpp"
-#include <cmath>
 
 int factorial(int n)
 {
