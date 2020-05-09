@@ -37,6 +37,10 @@ TEST_CASE("describe_gcd", "[gcd]")
 	REQUIRE(gcd(0, 0) == -1);
 	REQUIRE(gcd(1, -1) == 1);
 	REQUIRE(gcd(53, -23) == 1);
+
+	//The following tests should always fail, uncomment them one by one to show that the test check works properly
+	//REQUIRE(gcd(0, 1) == 1);
+	//REQUIRE(gcd(3, 2) == 2);
 }
 
 int main(int argc, char* argv[])
